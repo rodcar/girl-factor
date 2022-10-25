@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+
+header nav a:hover{
+    color: var(--pink)!important;
+}
+
+header nav button{
+    color: var(--pink)!important;
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+.slide{
+    margin: 60px 0;
+}
+
+.slide img{
+    height: 50vh;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink)!important;
+}
+
