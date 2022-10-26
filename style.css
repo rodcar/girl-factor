@@ -3,7 +3,7 @@
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
-    --pink: #e5345b;
+    --pink: #E95B7A;
 }
 
 header nav a:hover{
@@ -11,7 +11,7 @@ header nav a:hover{
 }
 
 header nav button{
-    color: var(--pink)!important;
+    color: var(--pink) !important;
 }
 
 body{
@@ -22,8 +22,17 @@ body{
     margin: 60px 0;
 }
 
-.slide img{
+/* .slide img{
     height: 50vh;
+} */
+
+#newsletter h2{
+    padding: 4px;
+    border-left: 5px solid var(--pink);
+}
+#newsletter button{
+    background-color: var(--pink);
+    border: none;
 }
 
 /* footer */
