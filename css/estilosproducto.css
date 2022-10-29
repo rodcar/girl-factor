@@ -1,0 +1,24 @@
+.producto{
+    display:flex;
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+.subproducto{
+    display:block;
+    margin-left:25px ;
+    margin-bottom: 15px;
+    margin-right: 12px;
+}
+
+.descripcion{
+    height: 800px;
+    width:450px;
+    float: left;
+    margin-left:30px ;
+}
+.contenido{
+    display:flex;
+}
+#boton{
+    background-color: rosybrown;
+}
