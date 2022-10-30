@@ -95,6 +95,7 @@ async function cargarDescripcion() {
 
   document.getElementById("add").onclick = () => {
     let producto = {
+        id: data[q-1].id,
         img: data[q-1].img,
         nombre: data[q-1].nombre,
         precio: data[q-1].precio,
@@ -105,7 +106,16 @@ async function cargarDescripcion() {
     
     if (localStorage.getItem("shopping-cart") !== null) {
         let shoppingCart = JSON.parse(localStorage.getItem("shopping-cart"));
-        shoppingCart.push(producto);
+        console.log(shoppingCart);
+        console.log(data[q-1].id);
+        let index = shoppingCart.findIndex(item => item.id == data[q-1].id);
+        console.log(index);
+        if(index != -1) {
+            shoppingCart[index].cantidad += 1;
+        } else {
+            shoppingCart.push(producto);
+        }
+
         localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
     } else {
         localStorage.setItem("shopping-cart", JSON.stringify([producto]));
