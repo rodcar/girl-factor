@@ -77,7 +77,7 @@ async function cargarDescripcion() {
             </div>
         </div>
         </div>
-        <button class="btn btn-danger w-50 my-5 d-block m-auto">
+        <button class="btn btn-danger w-50 my-5 d-block m-auto" id="add">
         Añadir al carrito
         </button>
         <ul style = "list-style-type: none">
@@ -92,6 +92,25 @@ async function cargarDescripcion() {
     </div>
     `;
   document.getElementById("contenedor").innerHTML = html;
+
+  document.getElementById("add").onclick = () => {
+    let producto = {
+        img: data[q-1].img,
+        nombre: data[q-1].nombre,
+        precio: data[q-1].precio,
+        cantidad: 1,
+        marca: 'GirlFactor'
+    };
+    console.log(producto);
+    
+    if (localStorage.getItem("shopping-cart") !== null) {
+        let shoppingCart = JSON.parse(localStorage.getItem("shopping-cart"));
+        shoppingCart.push(producto);
+        localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
+    } else {
+        localStorage.setItem("shopping-cart", JSON.stringify([producto]));
+    }
+  };
 }
 
 cargarDescripcion();
