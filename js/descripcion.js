@@ -78,7 +78,7 @@ async function cargarDescripcion() {
             </div>
         </div>
         </div>
-        <button class="btn btn-danger w-50 my-5 d-block m-auto" id="add">
+        <button type="button" class="btn btn-danger w-50 my-5 d-block m-auto" id="add" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-content="Listo! Producto añadido, <a href='carrito.html' title='test add link'>Ir al carrito</a>">
         Añadir al carrito
         </button>
         <ul style = "list-style-type: none">
@@ -93,6 +93,9 @@ async function cargarDescripcion() {
     </div>
     `;
   document.getElementById("contenedor").innerHTML = html;
+
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 
   document.getElementById("add").onclick = () => {
     let producto = {
