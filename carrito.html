@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirlFactor - Nosotros</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #content {
+            margin-top: 75px;
+        }
+
+        icon-shape {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .icon-sm {
+            width: 2rem;
+            height: 2rem;
+            
+        }
+        
+        #opcion-pago-tarjeta {
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" height="40">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                  <a class="nav-link" href="blusas.html">Blusas</a>                
+                  <a class="nav-link" href="#">Zapatillas</a>
+                  <a class="nav-link" href="index.html#novedades">Novedades</a>
+                  <a class="nav-link" href="index.html#promociones">Promociones</a>
+                </div>
+                <div class="d-flex">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="ingreso.html">Ingresar</a>
+                        <a class="nav-link" href="registro.html">Registrarse</a>
+                        <a class="nav-link" href="#">
+                            <i class="fa" style="font-size:24px">&#xf07a;</i>                            
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="content">
+        <div class="row justify-content-center g-4 mb-5">
+            <div class="col-8">
+                <h1 class="pt-3">Carrito</h1>
+                <p>Tienes <span id="item-count">4</span> productos en tu carrito</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2 d-flex align-items-center">
+                                    <img src="http://127.0.0.1:5500/images/1823452_1.jpg" alt="item" width="100">
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">Blusa 1</p>
+                                            <p class="fw-bold">Marca</p> 
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">S/.50.00</p>
+                                    </div>
+                                </div>                                
+                                <div class="col-2 d-flex align-items-center">
+                                    <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                    <span class="w-25 text-center">1</span>
+                                    <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
+                                </div>
+                                <div class="col-2 d-flex align-items-center"><a href="#">Eliminar</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2 d-flex align-items-center">
+                                    <img src="http://127.0.0.1:5500/images/1823452_1.jpg" alt="item" width="100">
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">Blusa 1</p>
+                                            <p class="fw-bold">Marca</p> 
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">S/.50.00</p>
+                                    </div>
+                                </div>                                
+                                <div class="col-2 d-flex align-items-center">
+                                    <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                    <span class="w-25 text-center">1</span>
+                                    <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
+                                </div>
+                                <div class="col-2 d-flex align-items-center"><a href="#">Eliminar</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2 d-flex align-items-center">
+                                    <img src="http://127.0.0.1:5500/images/1823452_1.jpg" alt="item" width="100">
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">Blusa 1</p>
+                                            <p class="fw-bold">Marca</p> 
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">S/.50.00</p>
+                                    </div>
+                                </div>                                
+                                <div class="col-2 d-flex align-items-center">
+                                    <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                    <span class="w-25 text-center">1</span>
+                                    <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
+                                </div>
+                                <div class="col-2 d-flex align-items-center"><a href="#">Eliminar</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2 d-flex align-items-center">
+                                    <img src="http://127.0.0.1:5500/images/1823452_1.jpg" alt="item" width="100">
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">Blusa 1</p>
+                                            <p class="fw-bold">Marca</p> 
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="container">
+                                            <p class="mb-0">S/.50.00</p>
+                                    </div>
+                                </div>                                
+                                <div class="col-2 d-flex align-items-center">
+                                    <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                    <span class="w-25 text-center">1</span>
+                                    <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
+                                </div>
+                                <div class="col-2 d-flex align-items-center"><a href="#">Eliminar</a></div>
+                            </div>
+                        </div>
+                    </li>                                        
+                </ul>
+            </div>
+            <div class="col-4 pt-4">
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <h4 class="py-2">Resumen</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>S/.200.00</h5>
+                                </div>
+                                <div class="col text-end">
+                                    <a href="#">Tengo un cupón</a>
+                                </div>
+                            </div>
+                        </div>                   
+                      </li>
+                      <li class="list-group-item">
+                        <h4 class="pt-2">Entrega</h4>
+                        <small>La entrega se realizará dentro de las 24 horas posterior a la compra.</small>
+                        <form class="mt-3">
+                            <div class="form-group mb-3">
+                              <label for="formGroupExampleInput">Celular</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su número celular">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="formGroupExampleInput">Distrito</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="">Seleccionar</option>
+                                    <option value="">ANCON</option>
+                                    <option value="">ATE</option>
+                                    <option value="">BARRANCO</option>
+                                    <option value="">BREÑA</option>
+                                    <option value="">CARABAYLLO</option>
+                                    <option value="">CHACLACAYO</option>
+                                    <option value="">CHORRILLOS</option>
+                                    <option value="">CIENEGUILLA</option>
+                                    <option value="">COMAS</option>
+                                    <option value="">EL AGUSTINO</option>
+                                    <option value="">INDEPENDENCIA</option>
+                                    <option value="">JESUS MARIA</option>
+                                    <option value="">LA MOLINA</option>
+                                    <option value="">LA VICTORIA</option>
+                                    <option value="">LIMA</option>
+                                    <option value="">LINCE</option>
+                                    <option value="">LOS OLIVOS</option>
+                                    <option value="">LURIGANCHO</option>
+                                    <option value="">LURIN</option>
+                                    <option value="">MAGDALENA DEL MAR</option>
+                                    <option value="">MIRAFLORES</option>
+                                    <option value="">PACHACAMAC</option>
+                                    <option value="">PUCUSANA</option>
+                                    <option value="">PUEBLO LIBRE</option>
+                                    <option value="">PUENTE PIEDRA</option>
+                                    <option value="">PUNTA HERMOSA</option>
+                                    <option value="">PUNTA NEGRA</option>
+                                    <option value="">RIMAC</option>
+                                    <option value="">SAN BARTOLO</option>
+                                    <option value="">SAN BORJA</option>
+                                    <option value="">SAN ISIDRO</option>
+                                    <option value="">SAN JUAN DE LURIGANCHO</option>
+                                    <option value="">SAN JUAN DE MIRAFLORES</option>
+                                    <option value="">SAN LUIS</option>
+                                    <option value="">SAN MARTIN DE PORRES</option>
+                                    <option value="">SAN MIGUEL</option>
+                                    <option value="">SANTA ANITA</option>
+                                    <option value="">SANTA MARIA DEL MAR</option>
+                                    <option value="">SANTA ROSA</option>
+                                    <option value="">SANTIAGO DE SURCO</option>
+                                    <option value="">SURQUILLO</option>
+                                    <option value="">VILLA EL SALVADOR</option>
+                                    <option value="">VILLA MARIA DEL TRIUNFO</option>
+                                  </select>
+                              </div>                            
+                            <div class="form-group mb-3">
+                              <label for="formGroupExampleInput2">Dirección</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su dirección">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="exampleFormControlTextarea3">Nota</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea3" rows="2"></textarea>
+                              </div>
+                        </form>                        
+                      </li>
+                      <li class="list-group-item">
+                        <h4 class="pt-2">Pago</h4>
+                        <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                            <button type="button" class="btn btn-light" id="opcion-pago-tarjeta">
+                                <img src="https://cheltenham-gin.co.uk/wp-content/uploads/2021/02/Visa-mastercard-logos.png" width="30"> Pagar con Tarjeta de Débito / Crédito</button>
+                            <button class="btn btn-light">
+                                <img src="https://www.yape.com.pe/assets/images/logo.png" width="30" /> Pagar con Yape
+                            </button>
+                            <button class="btn btn-light">
+                                <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" width="30" /> Pagar con Plin
+                            </button>
+                            <button class="btn btn-light">
+                                <img src="https://play-lh.googleusercontent.com/LsswrOsVczPejpm9QAGCb-AsFebaRdO5lEmY7_VkOpG_KvICCyna07_P04g5Owz9gGM" width="30" /> Pagar con Tunki
+                            </button> 
+                          </div>                                               
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class = "bg-dark pt-5 pb-1">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Pedidos</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "faq.html" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Preguntas frecuentes
+                            </a>
+                        </li>                        
+                        <li class = "my-3">
+                            <a href = "devolucion.html" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Devolución
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "tyc.html" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Términos y condiciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Marca</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "nosotros.html" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Sobre la marca
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "integrantes.html" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Equipo
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contacto</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "mt-3">
+                            <a href = "contacto.html" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Formulario de contacto
+                            </a>
+                        </li>
+                    </ul>                    
+                    <div class = "d-flex justify-content-start align-items-start my-3">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            <a href="mailto:contacto@girlfactor.pe" class = "text-white text-decoration-none">contacto@girlfactor.pe</a>
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-3">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            <a href="tel:+51950302674" class = "text-white text-decoration-none">950 302 674</a>
+                        </span>
+                    </div>                    
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Redes</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "https://www.tiktok.com/@girl_factor" class = "text-white text-decoration-none fs-4 me-4" target="_blank">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/girlfactor_peru/" class = "text-white text-decoration-none fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>                                                       
+                            <li>
+                                <a href = "https://www.facebook.com/profile.php?id=100086994019306&is_tour_dismissed=true" class = "text-white text-decoration-none fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://twitter.com/" class = "text-white text-decoration-none fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.pinterest.es/" class = "text-white text-decoration-none fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-center mt-3">
+            <p class="text-white text-center">GirlFactor © 2022 | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
