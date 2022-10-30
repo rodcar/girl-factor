@@ -18,7 +18,7 @@ function loadShoppingCart() {
       <div class="container-fluid">
           <div class="row">
               <div class="col-2 d-flex align-items-center">
-                  <img src="${producto.img}" alt="item" width="100">
+                  <img src="${producto.img}" alt="item" width="100" class="rounded">
               </div>
               <div class="col-3 d-flex align-items-center">
                   <div class="container">
