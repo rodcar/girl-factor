@@ -32,9 +32,9 @@ function loadShoppingCart() {
                   </div>
               </div>                                
               <div class="col-2 d-flex align-items-center">
-                  <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                  <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity" onclick="changeItemQuantity(${producto.id}, -1)">
                   <span class="w-25 text-center">${producto.cantidad}</span>
-                  <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
+                  <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity" onclick="changeItemQuantity(${producto.id}, 1)">
               </div>
               <div class="col-2 d-flex align-items-center"><a href="#" class="text-decoration-none" data-id="${producto.id}" onclick="deleteItem(${producto.id})">Eliminar</a></div>
           </div>
@@ -61,4 +61,16 @@ function deleteItem(id) {
     });
     localStorage.setItem("shopping-cart", JSON.stringify(shoppingCartData));
     loadShoppingCart();
+}
+
+function changeItemQuantity(id, quantityChange) {
+    let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
+    let index = shoppingCartData.findIndex(item => item.id == id);
+    if(index != -1) {
+        if (shoppingCartData[index].cantidad + quantityChange >= 1) {
+            shoppingCartData[index].cantidad += quantityChange;
+        }
+    }
+    localStorage.setItem("shopping-cart", JSON.stringify(shoppingCartData));
+    loadShoppingCart();  
 }
