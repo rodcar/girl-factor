@@ -1,7 +1,7 @@
 [
     {
         "id" : 1,
-        "img" : "../images/1823452_1.jpg",
+        "img" : "./images/1823452_1.jpg",
         "tipo" : "blusa",
         "nombre" : "BLUSA MUJER ESMA MANGA CERO AMARILLO",
         "precio" : 39.00
