@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
   let shoppingCartList = document.getElementById("list-products");
+  let subtotalSpan = document.getElementById("subtotal");
+  let totalSpan = document.getElementById("total");
   let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
   let html = "";
+  let subtotal = 0;
   shoppingCartData.forEach((producto) => {
     html += `
     <li class="list-group-item">
@@ -31,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </li>
     `;
+    subtotal += producto.precio * producto.cantidad;
   });
+  subtotalSpan.innerHTML = `S/.${subtotal.toFixed(2)}`;
+  let total = subtotal + 15;
+  totalSpan.innerHTML = `S/.${total.toFixed(2)}`;
   shoppingCartList.innerHTML = html;
 });
