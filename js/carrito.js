@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
   let shoppingCartList = document.getElementById("list-products");
   let subtotalSpan = document.getElementById("subtotal");
   let totalSpan = document.getElementById("total");
+  let counterSpan = document.getElementById("item-count");
   let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
+  counterSpan.innerHTML = shoppingCartData.length;
   let html = "";
   let subtotal = 0;
   shoppingCartData.forEach((producto) => {
