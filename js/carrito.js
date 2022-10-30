@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   let shoppingCartList = document.getElementById("list-products");
   let subtotalSpan = document.getElementById("subtotal");
+  let entregaPrecioSpan = document.getElementById("entrega-precio");
   let totalSpan = document.getElementById("total");
+  
   let counterSpan = document.getElementById("item-count");
   let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
   counterSpan.innerHTML = shoppingCartData.length;
@@ -39,7 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
     subtotal += producto.precio * producto.cantidad;
   });
   subtotalSpan.innerHTML = `S/.${subtotal.toFixed(2)}`;
-  let total = subtotal + 15;
+  let entregaPrecio = 15;
+  if (subtotal >= 99) {
+    entregaPrecio = 0;
+    entregaPrecioSpan.innerHTML = `S/.${entregaPrecio.toFixed(2)}`;
+  }
+  let total = subtotal + entregaPrecio;
   totalSpan.innerHTML = `S/.${total.toFixed(2)}`;
   shoppingCartList.innerHTML = html;
 });
