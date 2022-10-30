@@ -4,6 +4,7 @@ async function cargarDescripcion() {
   const data = await respuesta.json();
   let queryStrings = new URLSearchParams(window.location.search);
   const q = parseInt(queryStrings.get("id"));
+  document.title = `GirlFactor - ${data[q-1].nombre}`;
   let html = `
     <div class="row d-flex justify-content-center">
     <div class="col-auto d-none d-md-none d-lg-block d-xl-block d-xxl-block">
