@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "img" : "../images/1823452_1.jpg",
+        "tipo" : "blusa",
+        "nombre" : "BLUSA MUJER ESMA MANGA CERO AMARILLO",
+        "precio" : 39.00
+    },
+    {
+        "id" : 2,
+        "img" : "../images/1847510_1.jpg",
+        "tipo" : "blusa",
+        "nombre" : "Blusa Mujer Betsy Blanco ",
+        "precio" : 99.00
+    },
+    {
+        "id" : 3,
+        "img" : "../images/1847835_1.jpg",
+        "tipo" : "blusa",
+        "nombre" : "Blusa Mujer Rubí Mostaza ",
+        "precio" : 99.00
+    },
+    {
+        "id" : 4,
+        "img" : "../images/1847799_1.jpg",
+        "tipo" : "blusa",
+        "nombre" : "BLUSA MUJER NATZUKIPRINT ROSADO",
+        "precio" : 59.00
+    },
+    {
+        "id" : 5,
+        "img" : "../images/1847666_1.jpg",
+        "tipo" : "blusa",
+        "nombre" : "BLUSA MUJER NATTY CELESTE BELL",
+        "precio" : 69.00
+    },
+    {
+        "id" : 6,
+        "img" : "../images/1847841_1.jpg",
+        "tipo" : "blusa",
+        "nombre" : "BLUSA MUJER RUBÍ VERDE FROSTY",
+        "precio" : 41.00
+    }
+]
