@@ -129,7 +129,7 @@
                     <p class="text-center text-muted">¡Cupones exclusivos y notificaciones de nuestros mejores eventos!</p>
                     <div class="input-group mb-3 mt-3">
                         <input type="text" class="form-control" placeholder="Ingresa tu correo">
-                        <button class="btn btn-primary" type="submit">Suscribirme</button>
+                        <button class="btn btn-primary popover-test" type="button" data-bs-toggle="popover" data-bs-title="Gracias" data-bs-content="Tu correo se ha suscrito.">Suscribirme</button>
                     </div>
                 </div>
             </div>
@@ -242,5 +242,9 @@
             <p class="text-white text-center">GirlFactor © 2022 | Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 </body>
 </html>
