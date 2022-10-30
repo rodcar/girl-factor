@@ -190,13 +190,13 @@
                         <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                             <button type="button" class="btn btn-light" id="opcion-pago-tarjeta">
                                 <img src="https://cheltenham-gin.co.uk/wp-content/uploads/2021/02/Visa-mastercard-logos.png" width="30"> Pagar con Tarjeta de Débito / Crédito</button>
-                            <button class="btn btn-light">
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalYape">
                                 <img src="https://www.yape.com.pe/assets/images/logo.png" width="30" /> Pagar con Yape
                             </button>
-                            <button class="btn btn-light">
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalPlin">
                                 <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" width="30" /> Pagar con Plin
                             </button>
-                            <button class="btn btn-light">
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalTunki">
                                 <img src="https://play-lh.googleusercontent.com/LsswrOsVczPejpm9QAGCb-AsFebaRdO5lEmY7_VkOpG_KvICCyna07_P04g5Owz9gGM" width="30" /> Pagar con Tunki
                             </button> 
                           </div>                                               
@@ -225,6 +225,90 @@
         </div>
         </div>
     </div>
+
+    <!-- Modal Yape-->
+    <div class="modal fade" id="exampleModalYape" tabindex="-1" aria-labelledby="exampleModalYape" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalYapeLabel">Paga con Yape</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+                <div class="p-2 d-flex justify-content-center">
+                    <img src="images/pagos_qr.png" alt="QR Yape">
+                </div>
+                <div class="p-2 text-center">
+                    <h4>GirlFactor S.A.C</h4>
+                </div>
+                <div class="p-2 text-center">
+                    <p>Enviar captura de pago por WhatsApp al número:</p>
+                    <a href="https://wa.me/51950302674?text=Hola%20hice%20un%20pago%20con%20Yape" class="btn btn-success btn-lg " role="button" aria-pressed="true" target="_blank"><i class="bi bi-whatsapp"></i> 950 302 674</a>
+                </div>  
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Notificar pago por Yape</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Modal Plin-->
+    <div class="modal fade" id="exampleModalPlin" tabindex="-1" aria-labelledby="exampleModalYape" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalPlinLabel">Paga con Plin</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+                <div class="p-2 d-flex justify-content-center">
+                    <img src="images/pagos_qr.png" alt="QR Yape">
+                </div>
+                <div class="p-2 text-center">
+                    <h4>GirlFactor S.A.C</h4>
+                </div>
+                <div class="p-2 text-center">
+                    <p>Enviar captura de pago por WhatsApp al número:</p>
+                    <a href="https://wa.me/51950302674?text=Hola%20hice%20un%20pago%20con%20Plin" class="btn btn-success btn-lg " role="button" aria-pressed="true" target="_blank"><i class="bi bi-whatsapp"></i> 950 302 674</a>
+                </div>  
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Notificar pago por Plin</button>
+            </div>
+        </div>
+        </div>
+    </div>      
+    
+    <!-- Modal Tunki-->
+    <div class="modal fade" id="exampleModalTunki" tabindex="-1" aria-labelledby="exampleModalYape" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalTunkiLabel">Paga con Tunki</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+                <div class="p-2 d-flex justify-content-center">
+                    <img src="images/pagos_qr.png" alt="QR Yape">
+                </div>
+                <div class="p-2 text-center">
+                    <h4>GirlFactor S.A.C</h4>
+                </div>
+                <div class="p-2 text-center">
+                    <p>Enviar captura de pago por WhatsApp al número:</p>
+                    <a href="https://wa.me/51950302674?text=Hola%20hice%20un%20pago%20con%20Tunki" class="btn btn-success btn-lg " role="button" aria-pressed="true" target="_blank"><i class="bi bi-whatsapp"></i> 950 302 674</a>
+                </div>  
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Notificar pago por Tunki</button>
+            </div>
+        </div>
+        </div>
+    </div>    
 
     <!-- Footer -->
     <footer class = "bg-dark pt-5 pb-1">
