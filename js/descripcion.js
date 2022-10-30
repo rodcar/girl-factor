@@ -42,7 +42,7 @@ async function cargarDescripcion() {
         <h4>${data[q-1].nombre}</h4>
         <p>SKU : 1820410</p>
         <hr />
-        <p>Precio antes : S/ <strong class="text-secondary">20</strong></p>
+        <p>Precio antes : <del class="text-secondary fw-bold">S/ ${(data[q-1].precio * 1.15).toFixed(0)}</del></p>
         <p class="h3">Precio ahora : S/ <strong class="h1 text-danger">${data[q-1].precio}</strong></p>
         <hr />
         <p>
