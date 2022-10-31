@@ -48,3 +48,7 @@ footer a{
 footer a:hover{
     color: var(--pink)!important;
 }
+.subtitle {
+    color: #E02850;
+    margin-left: 27px;
+}
