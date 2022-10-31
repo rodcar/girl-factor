@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container-md {
+            max-width: 540px;
+        }
+    </style>
 </head>
 <body>
     <header class="container-fluid">
@@ -50,50 +55,52 @@
 
         <!--Formulario de devolución-->
        <div class="container">
-        <h1 class="mb-4">Devolución</h1>
-        <form>
-            <div class="form-row">
-              <div class="col-md-4 mb-3">
-                <label for="validationServer01">Nombre del Comprador</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre del comprador" value="" required>
-                <div class="valid-feedback">
-                  Validado
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="validationServer02">Codigo de Compra</label>
-                <input type="" class="form-control is-valid" id="validationServer02" placeholder="Codigo de Compra" value="" required>
-                <div class="valid-feedback">
-                  Validado
-                </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="mb-4">Devolución</h1>
+            <form class="container-md">
+                <div class="form-group">
+                  <div class="form-row">
+                    <label for="validationServer01">Nombre del Comprador</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre del comprador" value="" required>
+                    <div class="valid-feedback">
+                      Validado
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="validationServer02">Codigo de Compra</label>
+                    <input type="" class="form-control is-valid" id="validationServer02" placeholder="Codigo de Compra" value="" required>
+                    <div class="valid-feedback">
+                      Validado
+                    </div>
+                      </div>
+                    </div>
+                <!--<div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationServer03">Local de Compra</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Local de Compra" required>
+                    <div class="invalid-feedback">
+                      Ingresa el Local de Compra
+                    </div>
+                  </div>
+                  </div>-->
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Motivo de Devolución</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-group pb-2">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                      Estoy de acuerdo
+                    </label>
+                    <div class="invalid-feedback">
+                      Usted tiene que estar de Acuerdo
+                    </div>
                   </div>
                 </div>
-            <!--<div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationServer03">Local de Compra</label>
-                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Local de Compra" required>
-                <div class="invalid-feedback">
-                  Ingresa el Local de Compra
-                </div>
-              </div>
-              </div>-->
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Motivo de Devolución</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-            <div class="form-group pb-2">
-              <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
-                <label class="form-check-label" for="invalidCheck3">
-                  Estoy de acuerdo
-                </label>
-                <div class="invalid-feedback">
-                  Usted tiene que estar de Acuerdo
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-primary mb-4" type="submit">Mandar formulario </button>
-        </form>
+                <button class="btn btn-primary mb-4" type="submit">Mandar formulario </button>
+            </form>
+        </div>
 
     </div>
 
