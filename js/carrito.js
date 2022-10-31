@@ -12,6 +12,9 @@ function loadShoppingCart() {
     let totalTunkiSpan = document.getElementById("totalTunki");
     let counterSpan = document.getElementById("item-count");
     let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
+
+    if (shoppingCartData.length == 0) { return; }
+
     counterSpan.innerHTML = shoppingCartData.length;
     let html = "";
     let subtotal = 0;
