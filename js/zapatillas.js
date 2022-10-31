@@ -15,7 +15,7 @@ async function cargarJSON() {
                 <h4 class="u-text u-text-default u-text-font u-text-1">${producto.nombre}<br>
                 </h4>
                 <h6 class="u-text u-text-default u-text-2">S/.${producto.precio}</h6><!--product_button--><!--options_json--><!--{"clickType":"add-to-cart","content":"aGREGAR AL CARRITO"}--><!--/options_json-->
-                <a href="#" class="u-border-2 u-border-grey-25 u-btn rounded u-button-style u-palette-2-base u-product-control u-text-body-color u-btn-1"><!--product_button_content-->AGREGAR AL CARRITO<!--/product_button_content--></a><!--/product_button-->
+                <a href="descripcion.html?id=${producto.id}" class="u-border-2 u-border-grey-25 u-btn rounded u-button-style u-palette-2-base u-product-control u-text-body-color u-btn-1"><!--product_button_content-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ver detalles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--/product_button_content--></a><!--/product_button-->
                 </div>
             </div>
             </div>
