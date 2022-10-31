@@ -52,3 +52,6 @@ footer a:hover{
     color: #E02850;
     margin-left: 27px;
 }
+#badge-shopping-cart {
+    display: none;
+}

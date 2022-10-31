@@ -49,6 +49,10 @@
                             <a class="nav-link" href="registro.html">Registrarse</a>
                             <a class="nav-link" href="carrito.html">
                                 <i class="fa" style="font-size:24px">&#xf07a;</i>
+                                <span class="translate-middle badge rounded-pill bg-danger" id="badge-shopping-cart">
+                                    1
+                                    <span class="visually-hidden">Elementos en el carrito</span>
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -289,6 +293,7 @@
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -71,6 +71,7 @@ function deleteItem(id) {
     });
     localStorage.setItem("shopping-cart", JSON.stringify(shoppingCartData));
     loadShoppingCart();
+    loadItemBadge();
 }
 
 function changeItemQuantity(id, quantityChange) {
@@ -82,5 +83,6 @@ function changeItemQuantity(id, quantityChange) {
         }
     }
     localStorage.setItem("shopping-cart", JSON.stringify(shoppingCartData));
-    loadShoppingCart();  
+    loadShoppingCart();
+    loadItemBadge();  
 }

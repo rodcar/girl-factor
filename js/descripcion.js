@@ -137,6 +137,7 @@ async function cargarDescripcion() {
     } else {
         localStorage.setItem("shopping-cart", JSON.stringify([producto]));
     }
+    loadItemBadge();
   };
 }
 
