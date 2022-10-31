@@ -7,6 +7,12 @@ h6 {
     color: #ff008b;
 }
 
+.title {
+    color: #7c46ec;
+    opacity: 0.9;
+    font-family: cursive;
+}
+
 section {
     padding: 60px;
 }
