@@ -33890,7 +33890,8 @@ section.u-grey-10:before,
 .u-container-layout.u-container-layout.u-grey-10:before,
 .u-table-alt-grey-10 tr:nth-child(even) {
   color: #111111;
-  background-color: #e5e5e5;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
 }
 
 .u-button-style.u-grey-10,
@@ -44145,13 +44146,13 @@ a.u-link.u-text-hover-black:hover {
   color: #000000 !important;
 }
 
-.u-text-body-color,
+/*.u-text-body-color,
 li.active>a.u-button-style.u-text-body-color,
 li.active>a.u-button-style.u-text-body-color[class*="u-border-"],
 a.u-button-style.u-text-body-color,
 a.u-button-style.u-text-body-color[class*="u-border-"] {
   color: #111111 !important;
-}
+}*/
 
 a.u-button-style.u-text-body-color:hover,
 a.u-button-style.u-text-body-color[class*="u-border-"]:hover,
@@ -44161,7 +44162,7 @@ a.u-button-style.u-button-style.u-text-body-color:active,
 a.u-button-style.u-button-style.u-text-body-color[class*="u-border-"]:active,
 a.u-button-style.u-button-style.u-text-body-color.active,
 a.u-button-style.u-button-style.u-text-body-color[class*="u-border-"].active {
-  color: #0f0f0f !important;
+  color: #fff !important;
 }
 
 a.u-button-style:hover>.u-text-hover-body-color,
