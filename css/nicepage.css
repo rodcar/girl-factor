@@ -28220,18 +28220,18 @@ a.u-button-style.u-border-20 {
 }
 
 /*begin-variables font-family*/
-.u-body {
+/*.u-body {
   font-family: 'Open Sans', sans-serif;
-}
+}*/
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: Roboto, sans-serif;
-}
+}*/
 
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -45220,7 +45220,7 @@ h6 {
   font-weight: 400;
   list-icon-spacing: 0.3;
   list-icon-size: 0.8;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 
 p.u-large-text {
