@@ -1,10 +1,27 @@
-// 2DA FORMA
 async function cargarDescripcion() {
   const respuesta = await fetch("data/productos.json");
   const data = await respuesta.json();
   let queryStrings = new URLSearchParams(window.location.search);
   const q = parseInt(queryStrings.get("id"));
   document.title = `GirlFactor - ${data[q-1].nombre}`;
+  let tallas = "";
+  if(data[q-1].tipo == "blusa"){
+      tallas = `
+        <div class="p-2 mx-2 border">XS</div>
+        <div class="p-2 mx-2 border">S</div>
+        <div class="p-2 mx-2 border">S</div>
+        <div class="p-2 mx-2 border">M</div>
+        <div class="p-2 mx-2 border">L</div>
+      `;
+  } else {
+      tallas = `
+        <div class="p-2 mx-2 border">40</div>
+        <div class="p-2 mx-2 border">41</div>
+        <div class="p-2 mx-2 border">42</div>
+        <div class="p-2 mx-2 border">43</div>
+        <div class="p-2 mx-2 border">44</div>
+      `;
+  }
   let html = `
     <div class="row d-flex justify-content-center">
     <div class="col-auto d-none d-md-none d-lg-block d-xl-block d-xxl-block">
@@ -70,11 +87,7 @@ async function cargarDescripcion() {
         <div class="container overflow-hidden text-center">
         <div class="row gx-2">
             <div class="col d-flex">
-            <div class="p-2 mx-2 border">XS</div>
-            <div class="p-2 mx-2 border">S</div>
-            <div class="p-2 mx-2 border">S</div>
-            <div class="p-2 mx-2 border">M</div>
-            <div class="p-2 mx-2 border">L</div>
+              ${tallas}
             </div>
         </div>
         </div>
