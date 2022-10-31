@@ -55,7 +55,7 @@ async function cargarDescripcion() {
         />
     </div>
     <div class="col">
-        <p>XIOMI</p>
+        <p>GIRLFACTOR</p>
         <h4>${data[q-1].nombre}</h4>
         <p>SKU : 1820410</p>
         <hr />

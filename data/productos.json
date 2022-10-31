@@ -4,83 +4,95 @@
         "img" : "images/1823452_1.jpg",
         "tipo" : "blusa",
         "nombre" : "Blusa Mujer Esma Manga Cero Amarillo",
-        "precio" : 39.00
+        "precio" : 39.00,
+        "descripcion": ""
     },
     {
         "id" : 2,
         "img" : "images/1847510_1.jpg",
         "tipo" : "blusa",
         "nombre" : "Blusa Mujer Betsy Blanco",
-        "precio" : 99.00
+        "precio" : 99.00,
+        "descripcion": ""
     },
     {
         "id" : 3,
         "img" : "images/1847835_1.jpg",
         "tipo" : "blusa",
         "nombre" : "Blusa Mujer Rubí Mostaza",
-        "precio" : 99.00
+        "precio" : 99.00,
+        "descripcion": ""
     },
     {
         "id" : 4,
         "img" : "images/1847799_1.jpg",
         "tipo" : "blusa",
         "nombre" : "Blusa Mujer Natzukiprint Rosado",
-        "precio" : 59.00
+        "precio" : 59.00,
+        "descripcion": ""
     },
     {
         "id" : 5,
         "img" : "images/1847666_1.jpg",
         "tipo" : "blusa",
         "nombre" : "Blusa Mujer Natty Celeste Bell",
-        "precio" : 69.00
+        "precio" : 69.00,
+        "descripcion": ""
     },
     {
         "id" : 6,
         "img" : "images/1847841_1.jpg",
         "tipo" : "blusa",
         "nombre" : "Blusa Mujer Rubí Verde Frosty",
-        "precio" : 41.00
+        "precio" : 41.00,
+        "descripcion": ""
     },
     {
         "id" : 7,
         "img" : "images/Zapatillas_Forum_Bold_Blanco_GY6987_01_standard.jpg",
         "tipo" : "zapatilla",
         "nombre" : "Zapatillas Forum Bold",
-        "precio" : 219.00
+        "precio" : 219.00,
+        "descripcion": ""
     },
     {
         "id" : 8,
         "img" : "images/Zapatillas_Galaxy_5_Rosado_FY6746_01_standard.jpg",
         "tipo" : "zapatilla",
         "nombre" : "Zapatillas Galaxy 5",
-        "precio" : 289.00
+        "precio" : 289.00,
+        "descripcion": ""
     },
     {
         "id" : 9,
         "img" : "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ea87e74482ef41d9b8e1aef400ff30da_9366/Zapatillas_Nizza_Trek_Plomo_GY9539_01_standard.jpg",
         "tipo" : "zapatilla",
         "nombre" : "Zapatillas Nizza Trek",
-        "precio" : 279.00
+        "precio" : 279.00,
+        "descripcion": ""
     },
     {
         "id" : 10,
         "img" : "images/Zapatillas_Response_Purpura_GV9534_01_standard.jpg",
         "tipo" : "zapatilla",
         "nombre" : "Zapatillas Response",
-        "precio" : 199.00
+        "precio" : 199.00,
+        "descripcion": ""
     },
     {
         "id" : 11,
         "img" : "images/Zapatillas_adidas_Grand_Court_Alpha_Cloudfoam_Lifestyle_Court_Comfort_Style_Rosado_GY7060_01_standard.jpg",
         "tipo" : "zapatilla",
         "nombre" : "Zapatillas Adidas Grand Court Alpha",
-        "precio" : 399.00
+        "precio" : 399.00,
+        "descripcion": ""
     },
     {
         "id" : 12,
         "img" : "images/Zapatillas_Run_Falcon_2.0_Purpura_GV9576_01_standard.jpg",
         "tipo" : "zapatilla",
         "nombre" : "Zapatillas Run Falcon 2.0",
-        "precio" : 179.00
+        "precio" : 179.00,
+        "descripcion": ""
     }
 ]
