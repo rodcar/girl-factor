@@ -5,6 +5,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
+/**
+ * Loads the shopping cart data from localStorage and updates the HTML elements
+ * to display the shopping cart items, subtotal, delivery price, and total price.
+ * 
+ * This function performs the following tasks:
+ * - Retrieves the shopping cart data from localStorage.
+ * - Updates the item count in the shopping cart.
+ * - Generates the HTML for each item in the shopping cart and appends it to the list.
+ * - Calculates the subtotal of the items in the shopping cart.
+ * - Determines the delivery price based on the subtotal.
+ * - Calculates the total price including the delivery price.
+ * - Updates the HTML elements to display the subtotal, delivery price, and total price.
+ */
 function loadShoppingCart() {
     let shoppingCartList = document.getElementById("list-products");
     let subtotalSpan = document.getElementById("subtotal");
@@ -64,6 +78,11 @@ function loadShoppingCart() {
     shoppingCartList.innerHTML = html;
 }
 
+/**
+ * Deletes an item from the shopping cart stored in localStorage by its ID.
+ *
+ * @param {number} id - The ID of the item to be deleted.
+ */
 function deleteItem(id) {
     let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
     shoppingCartData = shoppingCartData.filter(function(item) {
@@ -74,6 +93,12 @@ function deleteItem(id) {
     loadItemBadge();
 }
 
+/**
+ * Changes the quantity of an item in the shopping cart.
+ *
+ * @param {number} id - The ID of the item to change the quantity of.
+ * @param {number} quantityChange - The amount to change the item's quantity by. Can be positive or negative.
+ */
 function changeItemQuantity(id, quantityChange) {
     let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
     let index = shoppingCartData.findIndex(item => item.id == id);
