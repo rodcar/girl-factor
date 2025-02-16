@@ -36,6 +36,7 @@
             height: 55px;
         }
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
 </head>
 <body>
     <header class="container-fluid">
@@ -203,6 +204,10 @@
                             <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalTunki">
                                 <img src="https://play-lh.googleusercontent.com/LsswrOsVczPejpm9QAGCb-AsFebaRdO5lEmY7_VkOpG_KvICCyna07_P04g5Owz9gGM" width="30" /> Pagar con Tunki
                             </button> 
+                            <div id="paypal-button-container" class="btn btn-light"></div>
+                            <button class="btn btn-light" id="apple-pay-button">
+                                <img src="https://developer.apple.com/design/human-interface-guidelines/apple-pay/images/apple-pay-mark-black.png" width="30" /> Pagar con Apple Pay
+                            </button>
                           </div>                                               
                       </li>
                     </ul>
@@ -431,5 +436,90 @@
     </footer>
     <script src="js/carrito.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '15.00' // Replace with the total amount
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Transaction completed by ' + details.payer.name.given_name);
+                    // Optionally, redirect the user to a success page
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+    <script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+    <script>
+        const applePayButton = document.getElementById('apple-pay-button');
+        if (window.ApplePaySession && ApplePaySession.canMakePayments()) {
+            applePayButton.style.display = 'block';
+            applePayButton.addEventListener('click', () => {
+                const paymentRequest = {
+                    countryCode: 'US',
+                    currencyCode: 'USD',
+                    total: {
+                        label: 'GirlFactor',
+                        amount: '15.00' // Replace with the total amount
+                    },
+                    supportedNetworks: ['visa', 'masterCard', 'amex'],
+                    merchantCapabilities: ['supports3DS']
+                };
+
+                const session = new ApplePaySession(3, paymentRequest);
+
+                session.onvalidatemerchant = (event) => {
+                    const validationURL = event.validationURL;
+                    // Call your server to request a merchant session
+                    fetch('/validate-merchant', {
+                        method: 'POST',
+                        body: JSON.stringify({ validationURL }),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => session.completeMerchantValidation(data))
+                    .catch(error => console.error('Error:', error));
+                };
+
+                session.onpaymentauthorized = (event) => {
+                    const payment = event.payment;
+                    // Process the payment on your server
+                    fetch('/process-payment', {
+                        method: 'POST',
+                        body: JSON.stringify(payment),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            session.completePayment(ApplePaySession.STATUS_SUCCESS);
+                            alert('Payment successful!');
+                        } else {
+                            session.completePayment(ApplePaySession.STATUS_FAILURE);
+                            alert('Payment failed.');
+                        }
+                    })
+                    .catch(error => {
+                        session.completePayment(ApplePaySession.STATUS_FAILURE);
+                        console.error('Error:', error);
+                    });
+                };
+
+                session.begin();
+            });
+        } else {
+            applePayButton.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
