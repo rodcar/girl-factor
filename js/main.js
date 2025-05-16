@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // carga cantidad de elementos en el carrito de compras
 function loadItemBadge() {
-    let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart"));
+    let shoppingCartData = JSON.parse(localStorage.getItem("shopping-cart")) || [];
     if (shoppingCartData.length == 0) { 
         let shoppingCartBadge = document.getElementById("badge-shopping-cart");
         shoppingCartBadge.style.display = 'none';
